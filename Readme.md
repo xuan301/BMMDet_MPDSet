@@ -8,13 +8,11 @@
 >```
 ## Datasets
 
-There are two datasets which are introduced in our paper. `dataset` includes 9 pairs of songs from Ping An Tech and other popular music plagiarism case. `dataset2` includes 20 pairs of songs from legal cases judged by court. 
+There are two datasets which are introduced in our paper. `data/npy/dataset_real_*` contains 29 pairs of real-life examples which constitute plagiarism. 
 ## Codes
 
 There are two directories in the Codes directory.
 ## Edit-Distance
 
 Implementation of our BMM-Det method. There is a detailed `Readme.md` in this directory to introduce the files included.
-## N-gram
 
-Implementation of baselines. There is a detailed `Readme.md` in this directory to introduce the files included.
