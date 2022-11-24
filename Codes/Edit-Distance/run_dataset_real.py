@@ -95,20 +95,8 @@ def edit_distance_optimized():
     avg_index = 0
 
     for i in range(plag_file_num):
-        # if ('case19' not in plag_files[i]):
-        #     continue
         res = {}
-        # if ("case24" not in plag_files[i]):
-        #     continue
         for j in tqdm(range(ori_file_num)):
-            # if (plag_files[i][6:] == ori_files[j][6:]):
-                # continue
-            '''
-            three functions for brutal:
-            average_minimum_distance_between_pieces()
-            three_minimum_distance_between_pieces()
-            minimum_distance_between_pieces()
-            '''
             distance, _ = max_flow_value(plag_musics[i], ori_musics[j], mode=mode, k=k,
                                     consider_note_distance=consider_note_distance, consider_downbeat=consider_downbeat,
                                     downbeat_weight=downbeat_weight, consider_force=consider_force)
